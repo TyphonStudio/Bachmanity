@@ -2,9 +2,7 @@
 using UnityEngine.Networking;
 
 // Exists only on server, gets calls from player commands only
-public class NetworkSpawner : NetworkBehaviour {
-
-    public static NetworkSpawner Instance { get; private set; }
+public abstract class NetworkSpawner : NetworkBehaviour {
 
     public GameObject prefab;
     Vector2 spawnPosition;
@@ -18,8 +16,6 @@ public class NetworkSpawner : NetworkBehaviour {
         NetworkServer.Spawn(obj);
     }
 
-    private void Awake()
-    {
-        Instance = this;
-    }
+    protected virtual void Awake() { }
+    protected virtual void Start() { }
 }

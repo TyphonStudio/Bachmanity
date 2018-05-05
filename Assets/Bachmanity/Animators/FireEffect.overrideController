@@ -1,0 +1,14 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: FireEffect
+  m_Controller: {fileID: 9100000, guid: 810aebfeb49b6bc4b8238c776e861359, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: f2c5bd36b86ec38478ce5542acd0a5a6, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: fc1c0e7b2f6c0c74f93265e083a9a9d3, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: a93d31165a7110540933ada4280f475b, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: a93d31165a7110540933ada4280f475b, type: 2}
