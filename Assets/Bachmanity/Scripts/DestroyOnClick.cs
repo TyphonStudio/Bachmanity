@@ -3,19 +3,13 @@ using UnityEngine.Networking;
 
 public class DestroyOnClick : NetworkBehaviour {
 
-    [Client]
+    [ClientCallback]
     private void OnMouseDown()
     {
-        // better spawn the effect object, put it where the barrel is, enable, play and disable/destroy in the end
-        // play effect on local client
-        // destroyEffect.PlayEffect();
+        // play effect instantly on local client
+        EffectSpawner.Instance.SpawnAndPlay(transform.position);
         
-        // find a local player and send destroy command to server through it
-        NetworkSpawningModule.Local.CmdDestroyWithEffect(netId);
-    }
-
-    private void OnDestroy()
-    {
-        EffectSpawner.Instance.SpawnAndPlay((transform.position));
+        // send destroy command to server
+        NetworkSpawningModule.Local.CmdDestroyWithEffect(netId, NetworkPlayer.Local.netId);
     }
 }

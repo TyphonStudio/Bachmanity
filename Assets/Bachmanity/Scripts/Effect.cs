@@ -2,9 +2,6 @@
 
 public class Effect : MonoBehaviour {
 
-    [SerializeField]
-    SpriteRenderer sr;
-
     Animator myAnimator;
 
     private void Awake()
@@ -14,10 +11,8 @@ public class Effect : MonoBehaviour {
 
     public void PlayEffectAndDestroy()
     {
-        if(sr)
-            sr.enabled = false;
         myAnimator.SetTrigger("playEffect");
-        //Destroy(gameObject, myAnimator.GetCurrentAnimatorStateInfo(0).length);
+        // playEffect animation has an event that calls DestroyEffect when animation is over
     }
 
     public void DestroyEffect()
