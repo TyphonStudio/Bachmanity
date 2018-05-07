@@ -1,0 +1,38 @@
+ManifestFileVersion: 0
+CRC: 1730179738
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 4cd159275634375e8b81df0e3af6c738
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 8d88eb12c603c3f1720bfb679a75db22
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 58
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 8c2fe355e73748149ac4cb115aa6652b, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 212
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/Bachmanity/Sprites/Typhon/typhon_logo_outline.png
+- Assets/Bachmanity/Sprites/Typhon/typhon_logo.png
+- Assets/Bachmanity/Prefabs/Barrel.prefab
+Dependencies: []
