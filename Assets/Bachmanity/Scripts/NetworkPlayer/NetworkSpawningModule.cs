@@ -17,11 +17,11 @@ public class NetworkSpawningModule : NetworkBehaviour
         BarrelSpawner.Instance.SpawnOnServer();
     }
 
-    [Command]
-    public void CmdDestroyOnServer(NetworkInstanceId netId)
-    {
-        NetworkServer.Destroy(NetworkServer.FindLocalObject(netId));
-    }
+    //[Command]
+    //public void CmdDestroyOnServer(NetworkInstanceId netId)
+    //{
+    //    NetworkServer.Destroy(NetworkServer.FindLocalObject(netId));
+    //}
 
     [Command]
     public void CmdDestroyWithEffect(NetworkInstanceId objId, NetworkInstanceId initiator)
@@ -42,6 +42,7 @@ public class NetworkSpawningModule : NetworkBehaviour
         if (NetworkPlayer.Local.netId != initiator)
         {
             EffectSpawner.Instance.SpawnAndPlay(pos);
+            CameraShaker.Instance.ShakeMainCameraOnce(1.0f, 1.0f);
         }
     }
 }
