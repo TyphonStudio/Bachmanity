@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Networking.unity
+    path: Assets/Bachmanity/Scenes/Networking.unity
     guid: c315676c8b2c58d4b9aaaeae77b6ad0a
+  - enabled: 0
+    path: Assets/Bachmanity/Scenes/SettingsMenu.unity
+    guid: 0f7b59a1e9ccb1647ae837a5cfc06881
   m_configObjects: {}
