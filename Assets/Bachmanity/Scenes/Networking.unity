@@ -389,7 +389,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2141730554}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1a4b98e96e102147be28af1db1ab575, type: 3}
+  m_Script: {fileID: -822479833, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_NetworkPort: 7777
@@ -404,7 +404,7 @@ MonoBehaviour:
   m_PlayerPrefab: {fileID: 1887624403446768, guid: 609ab88bab160dd45bd7fb3c41d68c39,
     type: 2}
   m_AutoCreatePlayer: 1
-  m_PlayerSpawnMethod: 0
+  m_PlayerSpawnMethod: 1
   m_OfflineScene: 
   m_OnlineScene: 
   m_SpawnPrefabs:
@@ -454,8 +454,8 @@ MonoBehaviour:
   m_Channels: 
   m_UseWebSockets: 0
   m_UseSimulator: 0
-  m_SimulatedLatency: 400
-  m_PacketLossPercentage: 12
+  m_SimulatedLatency: 1
+  m_PacketLossPercentage: 0
   m_MaxBufferedPackets: 16
   m_AllowFragmentation: 1
   m_MatchHost: mm.unet.unity3d.com

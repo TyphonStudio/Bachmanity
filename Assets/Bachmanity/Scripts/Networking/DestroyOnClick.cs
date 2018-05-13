@@ -11,6 +11,6 @@ public class DestroyOnClick : NetworkBehaviour {
         CameraShaker.Instance.ShakeMainCameraOnce(1.0f, 1.0f);
 
         // send destroy command to server
-        NetworkSpawningModule.Local.CmdDestroyWithEffect(netId, NetworkPlayer.Local.netId);
+        NetworkPlayer.Local.Spawning.CmdDestroyWithEffect(netId, NetworkPlayer.Local.netId);
     }
 }
